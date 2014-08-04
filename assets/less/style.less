@@ -1,0 +1,455 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	padding-top: 53px;
+}
+
+section {
+	padding: 60px 0;
+}
+
+#skrollr-body {
+	@media (min-width: @screen-md-min) {
+		height: 100%;
+		overflow-x :hidden; 
+	}
+}
+
+
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	small {
+		color: @gray;
+	}
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+@media (max-width: @screen-xs-max) {
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+}
+
+address {
+	margin-bottom: 15px;
+}
+
+
+// Navbar
+
+.navbar {
+	min-height: 70px;
+}
+
+.navbar-nav {
+	margin-top: 12px;
+}
+
+.navbar-brand {
+	height: 79px;
+
+	img {
+		@media (min-width: @screen-sm-min) {
+			width: 250px;
+		}
+	}
+}
+
+.navbar-collapse {
+	border: 0;
+}
+
+
+// Jumbotron
+
+.jumbotron {
+	margin-bottom: 0;
+	background-color: #fff;
+
+	@media (max-width: @screen-xs-max) {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+
+		h1 {
+			margin-top: 30px;
+			font-size: 48px;
+		}
+	}
+
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		h1 {
+			margin: 30px 0;
+			font-size: 56px;
+			text-align: center;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		padding: 90px 0;
+	}
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 300;
+}
+
+
+// Testimonials
+
+@quote-color: @ll-gray;
+
+.quote-triangle {
+	position: absolute;
+	top: 30px;
+	left: 5px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7.5px 10px 7.5px 0;
+	border-color: transparent @quote-color transparent transparent;
+
+	@media (max-width: @screen-xs-max) {
+		top: 0px;
+		left: calc(~'50% - 10px');
+		border-width: 0 7.5px 10px 7.5px;
+		border-color: transparent transparent @quote-color transparent;
+	}
+}
+
+.quote-quote {
+	padding: 7.5px 15px;
+	background-color: @quote-color;
+	border-radius: 5px;
+
+	@media (max-width: @screen-xs-max) {
+		margin-top: 10px;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.quote-headshot {
+	img {
+		margin-bottom: 7.5px;
+		border: 2px solid @ll-orange;
+	}
+}
+
+.quote-headshot-container {
+	@media (max-width: @screen-xs-max) {
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+.quote-cite {
+
+	.name {
+		font-size: 14px;
+	}
+
+	.company {
+		font-size: 12px;
+	}
+}
+
+
+// Features
+
+.feature {
+	background-color: @ll-gray-light;
+
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+}
+
+@media (min-width: @screen-md-min) {
+	.ipad {
+		.va-parent {
+			height: 423px;
+		}
+	}
+
+	.iphone {
+		.va-parent {
+			height: 331px;
+		}
+	}
+
+	.macbook {
+		.va-parent {
+			height: 319px;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.iphone {
+		.iphone-img {
+			margin: 0 auto;
+			float: none;
+		}
+	}
+}
+
+#signup {
+	position: relative;
+	z-index: 1;
+}
+
+#testimonials {
+	position: relative;
+	z-index: 2;
+}
+
+
+// Brand Icons
+
+@brand-icon-height: 21px;
+
+.frame {
+	height: @brand-icon-height;
+}
+
+.brand-icon {
+	height: 100%;
+	vertical-align: middle;
+
+	img {
+		vertical-align: middle;
+		max-height: @brand-icon-height;
+	}
+}
+
+
+// Footer
+
+#footer {
+
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+
+	color: white;
+	background-color: @ll-steel;
+
+	p {
+		margin-bottom: 0;
+		color: lighten(@ll-orange, 10%);
+		font-size: 14px;
+	}
+
+	a {
+		color: white;
+		&:hover {
+			color: @ll-orange;
+		}
+	}
+}
+
+.bottom-icons {
+	a {
+		font-size: 20px;
+	}
+
+	@media (max-width: @screen-xs-max) {
+		float: none !important;
+		width: 152px;
+		margin: 0 auto
+	}
+}
+
+
+// ABOUT PAGE
+
+.team-member {
+	// @media (max-width: @screen-xs-max) {
+		margin-bottom: 30px;
+	// }
+}
+
+.bio {
+	display: none;
+	text-align: justify;
+}
+
+.bio-link {
+	&:active,
+	&:focus {
+		outline: none;
+		text-decoration: none;
+	}
+}
+
+
+// Contact page
+
+#contact-page {
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+}
+
+
+// FORMS
+
+.form-control {
+	&:focus {
+		border-color: @ll-green;
+	}
+}
+
+input.no-bottom-radius {
+	border-bottom-width: 1px;
+	.border-bottom-radius(0);
+}
+
+input.no-radius {
+	border-radius: 0;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+}
+
+input.no-top-radius,
+textarea.no-top-radius {
+	border-top-width: 1px;
+	.border-top-radius(0);
+}
+
+
+// UTILITIES
+
+// Background colors
+
+.bg-silver {
+	background-color: @silver;
+}
+
+.bg-clouds {
+	background-color: @clouds;
+}
+
+.bg-ll-gray {
+	background-color: @ll-gray;
+}
+
+.bg-ll-gray-light {
+	background-color: @ll-gray-light;
+}
+
+.bg-ll-steel {
+	background-color: @ll-steel;
+}
+
+.bg-ll-blue-steel {
+	color: white;
+	background-color: @ll-blue-steel;
+}
+
+.bg-ll-green {
+	color: white;
+	background-color: @ll-green;
+}
+
+
+// Funky tilts
+
+hr {
+
+	&.tilt {
+		margin-top: 0;
+		margin-bottom: -2px;
+		border: 0;
+		border-top: 2px dotted @ll-orange;
+
+		@tilt: 3deg;
+
+		&.tilt-down {
+			.rotate(@tilt);
+		}
+
+		&.tilt-up {
+			.rotate(-@tilt);
+		}
+	}
+}
+
+
+
+
+// Vertical Align
+
+.va-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.va-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.anchor {
+	position: relative;
+	top: -53px;
+	visibility: hidden;
+}
+
+
+// Fluid Video Container
+
+.video-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden;
+
+	iframe {
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%;		
+	}
+}
+
+
+// Center block
+
+.center-block {
+	float: none;
+}
+
+
+// Handheld device margin botton
+
+@media (min-width: 0) and (max-width: @screen-sm-max) {
+	.handheld-mb {
+		margin-bottom: 30px;
+	}
+}

@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   var jsFileList = [
-    'assets/vendor/bootstrap/js/transition.js',
+  'assets/vendor/bootstrap/js/transition.js',
     // 'assets/vendor/bootstrap/js/alert.js',
     'assets/vendor/bootstrap/js/button.js',
     // 'assets/vendor/bootstrap/js/carousel.js',
@@ -21,30 +21,30 @@ module.exports = function(grunt) {
     'assets/vendor/skrollr/src/skrollr.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
-  ];
+    ];
 
-  grunt.initConfig({
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: [
+    grunt.initConfig({
+      jshint: {
+        options: {
+          jshintrc: '.jshintrc'
+        },
+        all: [
         'Gruntfile.js',
         'assets/js/*.js',
         '!assets/js/scripts.js',
         '!assets/**/*.min.*'
-      ]
-    },
-    less: {
-      dev: {
-        files: {
-          'assets/css/main.css': [
+        ]
+      },
+      less: {
+        dev: {
+          files: {
+            'assets/css/main.css': [
             'assets/less/main.less',
             'assets/less/flat-ui.less'
-          ]
-        },
-        options: {
-          compress: false,
+            ]
+          },
+          options: {
+            compress: false,
           // LESS source map
           // To enable, set sourceMap to true and update sourceMapRootpath based on your install
           sourceMap: true,
@@ -55,8 +55,8 @@ module.exports = function(grunt) {
       build: {
         files: {
           'assets/css/main.min.css': [
-            'assets/less/main.less',
-            'assets/less/flat-ui.less'
+          'assets/less/main.less',
+          'assets/less/flat-ui.less'
           ]
         },
         options: {
@@ -102,8 +102,8 @@ module.exports = function(grunt) {
         outputFile: 'assets/js/vendor/modernizr.min.js',
         files: {
           'src': [
-            ['assets/js/scripts.min.js'],
-            ['assets/css/main.min.css']
+          ['assets/js/scripts.min.js'],
+          ['assets/css/main.min.css']
           ]
         },
         uglify: true,
@@ -126,32 +126,42 @@ module.exports = function(grunt) {
         }
       }
     },
-    watch: {
-      less: {
-        files: [
-          'assets/less/*.less',
-          'assets/less/**/*.less'
-        ],
-        tasks: ['less:dev', 'autoprefixer:dev']
-      },
-      js: {
-        files: [
-          jsFileList,
-          '<%= jshint.all %>'
-        ],
-        tasks: ['jshint', 'concat']
-      },
-      livereload: {
+    imagemin: {                          // Task
+      dynamic: {                         // Another target
+        files: [{
+        expand: true,                  // Enable dynamic expansion
+        cwd: 'assets/img/',                   // Src matches are relative to this path
+        src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+        dest: 'assets/img/'                  // Destination path prefix
+      }]
+    }
+  },
+  watch: {
+    less: {
+      files: [
+      'assets/less/*.less',
+      'assets/less/**/*.less'
+      ],
+      tasks: ['less:dev', 'autoprefixer:dev']
+    },
+    js: {
+      files: [
+      jsFileList,
+      '<%= jshint.all %>'
+      ],
+      tasks: ['jshint', 'concat']
+    },
+    livereload: {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
           livereload: true
         },
         files: [
-          'assets/css/main.css',
-          'assets/js/scripts.js',
-          'templates/*.php',
-          '*.php'
+        'assets/css/main.css',
+        'assets/js/scripts.js',
+        'templates/*.php',
+        '*.php'
         ]
       }
     }
@@ -160,13 +170,13 @@ module.exports = function(grunt) {
   // Register tasks
   grunt.registerTask('default', [
     'dev'
-  ]);
+    ]);
   grunt.registerTask('dev', [
     'jshint',
     'less:dev',
     'autoprefixer:dev',
     'concat'
-  ]);
+    ]);
   grunt.registerTask('build', [
     'jshint',
     'less:build',
@@ -174,5 +184,8 @@ module.exports = function(grunt) {
     'uglify',
     'modernizr',
     'version'
-  ]);
+    ]);
+  grunt.registerTask('imageopt', [
+    'imagemin'
+    ]);
 };

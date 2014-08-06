@@ -2,22 +2,20 @@
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 70.9 54" enable-background="new 0 0 70.9 54" xml:space="preserve">
-<g>
-	<path fill="#FFFFFF" d="M68.7,0c1.2,0,2.2,1,2.2,2.2v49.6c0,1.2-1,2.2-2.2,2.2H2.2C1,54,0,53,0,51.8L0,2.2C0,1,1,0,2.2,0L68.7,0z"
-		/>
-	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="12.4086" y1="24.1336" x2="56.2327" y2="24.1336" gradientTransform="matrix(4.489659e-11 -1 1 4.489659e-11 11.4503 61.3443)">
-		<stop  offset="0" style="stop-color:#932A8E"/>
-		<stop  offset="1" style="stop-color:#2AAAE2"/>
-	</linearGradient>
-	<rect x="6.4" y="5.1" fill="url(#SVGID_1_)" width="58.3" height="43.8"/>
-	<path opacity="0.2" fill="#FFFFFF" d="M68.7,0L2.2,0C1,0,0,1,0,2.2l0,31l70.9-21.1V2.2C70.9,1,69.9,0,68.7,0z"/>
-	<circle fill="#010101" cx="3.3" cy="27" r="0.5"/>
-	<circle fill="#FFFFFF" cx="68" cy="27" r="1.5"/>
-	<path fill="#E6E6E5" d="M69.5,27c0-0.8-0.7-1.5-1.5-1.5v2.9C68.9,28.5,69.5,27.8,69.5,27z"/>
-	<path fill="none" stroke="#989898" stroke-miterlimit="10" d="M68.4,26.5c0.1,0,0.2,0.1,0.2,0.2v0.7c0,0.1-0.1,0.2-0.2,0.2h-0.7
-		c-0.1,0-0.2-0.1-0.2-0.2v-0.7c0-0.1,0.1-0.2,0.2-0.2H68.4z"/>
-	<circle fill="#8DD7F3" cx="3.3" cy="27" r="0.1"/>
-</g>
+	 viewBox="0 119.2 1000 761.6" style="enable-background:new 0 119.2 1000 761.6;" xml:space="preserve">
+<path style="fill:#1A1A1A;" d="M969,119.2c16.9,0,31,14.1,31,31v699.6c0,16.9-14.1,31-31,31H31c-16.9,0-31-14.1-31-31V150.2
+	c0-16.9,14.1-31,31-31H969z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="12.4443" y1="975.9003" x2="56.2443" y2="975.9003" gradientTransform="matrix(6.332382e-10 -14.1044 -14.1044 -6.332382e-10 14265.8711 984.4048)">
+	<stop  offset="0" style="stop-color:#932A8E"/>
+	<stop  offset="1" style="stop-color:#2AAAE2"/>
+</linearGradient>
+<rect x="90.3" y="191.1" style="fill:url(#SVGID_1_);" width="822.3" height="617.8"/>
+<path style="opacity:0.2;fill:#FFFFFF;enable-background:new    ;" d="M969,119.2H31c-16.9,0-31,14.1-31,31v437.2l1000-297.6V150.2
+	C1000,133.3,985.9,119.2,969,119.2z"/>
+<circle style="fill:#010101;" cx="46.5" cy="500" r="7.1"/>
+<circle style="fill:#131414;" cx="959.1" cy="500" r="21.2"/>
+<path d="M980.3,500c0-11.3-9.9-21.2-21.2-21.2v40.9C971.8,521.2,980.3,511.3,980.3,500z"/>
+<path style="fill:none;stroke:#989898;stroke-miterlimit:10;" d="M964.7,492.9c1.4,0,2.8,1.4,2.8,2.8v9.9c0,1.4-1.4,2.8-2.8,2.8
+	h-9.9c-1.4,0-2.8-1.4-2.8-2.8v-9.9c0-1.4,1.4-2.8,2.8-2.8H964.7z"/>
+<circle style="fill:#8DD7F3;" cx="46.5" cy="500" r="1.4"/>
 </svg>

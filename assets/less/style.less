@@ -7,6 +7,14 @@ body {
 	padding-top: 53px;
 }
 
+body.logged-in {
+  margin-top: 32px;
+
+  .navbar {
+    margin-top: 32px;
+  }
+}
+
 section {
 	padding: 60px 0;
 }
@@ -14,7 +22,7 @@ section {
 #skrollr-body {
 	@media (min-width: @screen-md-min) {
 		height: 100%;
-		overflow-x :hidden; 
+		overflow-x :hidden;
 	}
 }
 
@@ -179,7 +187,7 @@ h3 {
 // Features
 
 .feature {
-	background-color: @ll-gray-light;
+	// background-color: @ll-gray-light;
 
 	@media (max-width: @screen-xs-max) {
 		text-align: center;
@@ -422,19 +430,19 @@ hr {
 
 // Fluid Video Container
 
-.video-container { 
-	position: relative; 
-	padding-bottom: 56.25%; 
-	padding-top: 30px; 
-	height: 0; 
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
 	overflow: hidden;
 
 	iframe {
-		position: absolute; 
-		top: 0; 
-		left: 0; 
-		width: 100%; 
-		height: 100%;		
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -452,4 +460,29 @@ hr {
 	.handheld-mb {
 		margin-bottom: 30px;
 	}
+}
+
+span.fui-chat,
+span.fui-mail,
+span.fui-location,
+span.fui-triangle-down,
+span.fui-triangle-right-large,
+span.fui-triangle-down-small {
+ span {
+  display: none;
+ }
+}
+
+form.wpcf7-form {
+  div.form-group br {
+    display: none;
+  }
+}
+
+.brand-icons {
+  margin-top: 30px;
+}
+
+.quote-headshot {
+  display: none;
 }

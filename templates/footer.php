@@ -5,13 +5,13 @@
         <p>&copy;<?php date('Y'); ?> Limelight Health, Inc.</p>
       </div>
       <div class="col-sm-5 col-md-6">
-        <ul class="bottom-links">
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="about">About</a></li>
-        </ul>
+        <?php
+        if (has_nav_menu('bottom_links')) :
+          wp_nav_menu(array('theme_location' => 'bottom_links', 'menu_class' => 'bottom-links'));
+        endif;
+      ?>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 social-media hidden">
         <ul class="bottom-icons pull-right">
           <li><a href="https://twitter.com/LimelightHealth"><span class="fui-twitter"></span></a></li>
           <li><a href="https://twitter.com/LimelightHealth"><span class="fui-linkedin"></span></a></li>

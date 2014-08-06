@@ -20,3 +20,9 @@ function roots_wp_title($title) {
   return $title;
 }
 add_filter('wp_title', 'roots_wp_title', 10);
+
+function filter_ptags_on_images($content){
+   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+
+add_filter('the_content', 'filter_ptags_on_images');

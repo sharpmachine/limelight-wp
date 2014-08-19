@@ -12348,7 +12348,6 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
 }
 body {
   padding-top: 53px;

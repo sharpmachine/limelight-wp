@@ -12348,6 +12348,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 body {
   padding-top: 53px;
@@ -12360,12 +12361,6 @@ body.logged-in .navbar {
 }
 section {
   padding: 60px 0;
-}
-@media (min-width: 992px) {
-  #skrollr-body {
-    height: 100%;
-    overflow-x: hidden;
-  }
 }
 h1 small,
 h2 small,

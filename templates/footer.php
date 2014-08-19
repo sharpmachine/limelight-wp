@@ -11,12 +11,12 @@
         endif;
       ?>
       </div>
-      <div class="col-sm-3 social-media hidden">
+      <div class="col-sm-3 social-media">
         <ul class="bottom-icons pull-right">
           <li><a href="https://twitter.com/LimelightHealth"><span class="fui-twitter"></span></a></li>
-          <li><a href="https://twitter.com/LimelightHealth"><span class="fui-linkedin"></span></a></li>
-          <li><a href="https://twitter.com/LimelightHealth"><span class="fui-googleplus"></span></a></li>
-          <li><a href="https://twitter.com/LimelightHealth"><span class="fui-vimeo"></span></a></li>
+          <li><a href="https://twitter.com/LimelightHealth"><span class="fui-facebook"></span></a></li>
+          <li><a href="http://instagram.com/limelighthealth"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://www.pinterest.com/limelighthealth/"><span class="fui-pinterest"></span></a></li>
         </ul>
       </div>
     </div>

@@ -14,7 +14,7 @@
       <div class="col-sm-3 social-media">
         <ul class="bottom-icons pull-right">
           <li><a href="https://twitter.com/LimelightHealth"><span class="fui-twitter"></span></a></li>
-          <li><a href="https://twitter.com/LimelightHealth"><span class="fui-facebook"></span></a></li>
+          <li><a href="https://www.facebook.com/pages/Limelight-Health/1465705527013013?ref_type=bookmark"><span class="fui-facebook"></span></a></li>
           <li><a href="http://instagram.com/limelighthealth"><i class="fa fa-instagram"></i></a></li>
           <li><a href="http://www.pinterest.com/limelighthealth/"><span class="fui-pinterest"></span></a></li>
         </ul>
